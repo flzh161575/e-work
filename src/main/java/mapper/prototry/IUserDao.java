@@ -13,6 +13,8 @@ import entity.User;
 @Mapper
 public interface IUserDao {
 	void save(User user);
+	
+	 
 	@Select("select * from t_user where id=#{id}")
 	User findUser(int id);
 }
